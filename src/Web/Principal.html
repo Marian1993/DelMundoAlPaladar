@@ -13,8 +13,7 @@
             font-family: Arial;
         }
         nav{
-            background: crimson;
-            opacity: 0.6;
+           background: rgba(220, 0, 19, 0.6);
         }
         .OpacitatFons{
             opacity: 0.5;
@@ -24,12 +23,37 @@
         }
 
         body{
-            background-image: url("../Imatges/portada-slider-B.png");
+            background-image: url("../Imatges/portada-slider-B-op2.png");
 
         }
         .marges{
             margin: 0px -24px -24px;
         }
+        .margeEsquerra{
+
+        }
+        footer{
+        background: rgba(0, 0, 0, 0.8);
+        }
+        li{
+        margin-left: 15px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        font-size: 18px;
+
+        }
+        button{
+        margin-left: 15px;
+
+        }
+        .divCapcalera{
+        margin-left: auto;
+        margin-right: auto;
+
+        }
+
+
+
 
 
     </style>
@@ -39,44 +63,40 @@
     <div class="row marges">
         <div class="col-sm-12">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">Del Mundo al Paladar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+                    <div class="col-sm-10 divCapcalera">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Comida Internacional
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Japonesa</a></li>
+                                    <li><a class="dropdown-item" href="#">Indu</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Recetas</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Gustos de los usuarios</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-12 marges">
-            <footer class="bg-dark text-center text-white fixed-bottom">
+            <footer class="text-center text-white fixed-bottom">
                     <!-- Section: Social media -->
                     <section class="mb-4">
                         <!-- Facebook -->
@@ -112,8 +132,7 @@
                     <!-- Section: Social media -->
                 <!-- Copyright -->
                 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                    © 2020 Copyright:
-                    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                 Maria Antonia Martorell March
                 </div>
                 <!-- Copyright -->
             </footer>
