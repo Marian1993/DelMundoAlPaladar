@@ -6,6 +6,8 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="stylesheet" href="EstilsPropis.css">
+  <link rel="shortcut icon" href="../Imatges/ramen2.png">
+
 
   <style>
         *{
@@ -25,7 +27,7 @@
         }
         .marges{
         margin-left:-24px;
-        margin-right: -24px;
+        margin-right: -37px;
 
         }
         .margeEsquerra{
@@ -34,7 +36,7 @@
        footer{
         background: rgba(0, 0, 0, 0.8);
         margin-left: -15px;
-        margin-right: -24px;
+        margin-right: -50px;
         }
         li{
         margin-left: 15px;
@@ -52,21 +54,21 @@
         }
 
         h3{
-        margin-left: 50px;
-        text-align: left;
+        margin-left: -20px;
+        text-align: center;
         font-family: "Latin Modern Roman 10";
         font-style: oblique;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         margin-top: 30px;
         }
 
 
-        h2{
+        h1{
         margin-right: 15px;
         text-align: center;
         font-family: "Latin Modern Roman 10";
         font-style: oblique;
-        margin-bottom: 15px;
+        margin-bottom: 55px;
         margin-top: 15px;
         }
 
@@ -75,22 +77,68 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 3%;
-        margin-bottom: 7%;
+        margin-bottom: 3%;
         border-radius: 20px;
         }
         .dropdown-item:hover{
         background: rgba(220, 0, 19, 0.5);
         color:white;
-       }
+      }
 
-       p{
-       text-align:justify;
-       font-family: sans-serif;
-       margin-left: auto;
-       margin-right: auto;
-       width: 80%;
+      .divReceptes{
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(255,255,255,0.6);
+      border: 3px black solid;
+      margin-bottom: 40px;
+      border-radius: 10px;
 
-       }
+      }
+
+      .primDiv{
+      margin-left: 70px;
+      }
+
+      .image{
+      position: relative;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      margin-right: -30px;
+      float: left;
+      }
+      img{
+      border-radius: 10px;
+      }
+      .image__img{
+      display: block;
+      width: 80%
+      }
+
+      .image__overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.50s;
+      border-radius: 10px;
+      }
+      .image__overlay:hover{
+      opacity: 1;
+      }
+
+      a{
+      text-decoration:none;
+      color:white;
+      }
+
+
 
 
     </style>
@@ -110,7 +158,7 @@
                 <a class="nav-link active text-light" aria-current="page" href="Principal.html">Inicio</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle active text-light" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Comida Internacional
                 </a>
                 <ul class="dropdown-menu OpFons" aria-labelledby="navbarDropdown">
@@ -133,60 +181,155 @@
   </div>
   <div class="row">
     <div class="col-sm-10 divCentral">
-      <h2>Recetas</h2>
+      <h1>Recetas</h1>
+      <h3>Japonesa</h3>
       <div class="row">
-        <header>
-        <div class="col-sm-12">
-          <h3>Japonesa</h3>
-        </div>
-        </header>
-        <div class="col-sm-12">
-          <div class=""
+        <div class="col-sm-9 divReceptes">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image primDiv">
+              <img src="../Imatges/ramen.jpg" class="image__img" alt="Ramen" height="200px">
+              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image__overlay">
+                <p class="image__description">
+                  <a target="_blank" href="https://www.youtube.com/watch?v=NlGv1M52pTM&list=PLXnCldK2bYRtpxGamEYJdOYwdb-bTkuLP&index=2&ab_channel=CocinaJaponesa">Video</a>
+                <p></p>
+                  <a target="_blank" href="https://www.elespanol.com/cocinillas/recetas/carne/20161115/mejor-receta-ramen-puedes-preparar-casa/1000683981597_30.html">Receta</a>
+                </p>
+              </div>
+            </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image">
+            <img src="../Imatges/takoyaki.jpg" class="image__img" alt="Takoyaki" height="200px">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image__overlay">
+              <p class="image__description">
+                <a target="_blank" href="https://www.youtube.com/watch?v=_9XRa7q5lY4&ab_channel=KimonoMom">Video</a>
+              <p></p>
+                <a target="_blank" href="https://www.japonalternativo.com/recetas-japonesas/takoyaki-bolas-pulpo/">Receta</a>
+              </p>
+          </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image">
+            <img src="../Imatges/sushi.jpg" class="image__img" alt="Sushi" height="200px">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image__overlay">
+              <p class="image__description">
+                <a target="_blank" href="https://www.youtube.com/watch?v=EGeNKGosXA8&ab_channel=Munchies">Video</a>
+              <p></p>
+                <a target="_blank" href="https://recetaseconomicasycreativas.com/como-hacer-sushi-casero/">Receta</a>
+              </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 marges">
-      <footer class="text-center text-white fixed-bottom">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-            <i class="fab fa-facebook-square"></i></a>
-
-          <!-- Twitter -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-twitter"></i
-          ></a>
-
-          <!-- Google -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-google"></i
-          ></a>
-
-          <!-- Instagram -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-instagram"></i
-          ></a>
-
-          <!-- Linkedin -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-linkedin-in"></i
-          ></a>
-
-          <!-- Github -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-github"></i
-          ></a>
-        </section>
-
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          Maria Antonia Martorell March
+      <h3>India</h3>
+      <div class="row">
+        <div class="col-sm-9 divReceptes">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image primDiv">
+            <img src="../Imatges/samosa.jpg" class="image__img" alt="Samosa" height="200px">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image__overlay">
+              <p class="image__description">
+                <a target="_blank" href="https://www.youtube.com/watch?v=xNmthw6oB7Q&ab_channel=CookwithNabeela">Video</a>
+              <p></p>
+                <a target="_blank" href="https://okdiario.com/recetas/samosas-indias-2395788">Receta</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image">
+            <img src="../Imatges/masala.jpg" class="image__img" alt="Pollo tikka masala" height="200px">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image__overlay">
+              <p class="image__description">
+                <a target="_blank" href="https://www.youtube.com/watch?v=3gmsGwBlqE4&ab_channel=LalitKumarKitchen">Video</a>
+              <p></p>
+                <a target="_blank" href="https://www.pequerecetas.com/receta/pollo-tikka-masala/">Receta</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image">
+            <img src="../Imatges/naan.jpg" class="image__img" alt="Naan" height="200px">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image__overlay">
+              <p class="image__description">
+                <a target="_blank" href="https://www.youtube.com/watch?v=o9o81fJn3FQ&ab_channel=CookistWow">Video</a>
+              <p></p>
+                <a target="_blank" href="https://cookpad.com/es/recetas/11987893-naan-de-queso-mambo">Receta</a>
+              </p>
+            </div>
+          </div>
         </div>
-      </footer>
-    </div>
+      </div>
+      <h3>Mexicana</h3>
+      <div class="row">
+        <div class="col-sm-9 divReceptes">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image primDiv">
+            <img src="../Imatges/enchilada.jpg" class="image__img" alt="Enchilada" height="200px">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image__overlay">
+              <p class="image__description">
+                <a target="_blank" href="https://www.youtube.com/watch?v=BbT5oL53sTI&ab_channel=Carmen8a">Video</a>
+              <p></p>
+                <a target="_blank" href="https://canalcocina.es/receta/enchilada-mexicana">Receta</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image">
+            <img src="../Imatges/aguachile.jpg" class="image__img" alt="Aguachile Rojo" height="200px">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image__overlay">
+              <p class="image__description">
+                <a target="_blank" href="https://www.youtube.com/watch?v=4D85SOfMz-c&ab_channel=FuegoenLaCocina">Video</a>
+              <p></p>
+                <a target="_blank" href="https://unamexicanaenusa.com/2017/03/camarones-aguachile-rojo.html">Receta</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image">
+            <img src="../Imatges/ceviche.jpg" class="image__img" alt="Ceviche de camarón" height="200px">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 image__overlay">
+              <p class="image__description">
+                <a target="_blank" href="https://www.youtube.com/watch?v=eTWmqGJo_0E&ab_channel=KWA">Video</a>
+              <p></p>
+                <a target="_blank" href="https://www.mejorandomihogar.com/receta-ceviche-camaron/">Receta</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
+</div>
+<div class="row">
+  <div class="col-sm-12 marges">
+    <footer class="bg-black text-center text-white">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <i class="fab fa-facebook-square"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+        ></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+        ></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+        ></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+        ></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+        ></a>
+      </section>
+
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        Maria Antonia Martorell March
+      </div>
+    </footer>
+  </div>
+</div>
 </div>
 <script>
 
