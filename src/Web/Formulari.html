@@ -6,6 +6,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="stylesheet" href="EstilsPropis.css">
+  <link rel="shortcut icon" href="../Imatges/ramen2.png">
 
   <style>
         *{
@@ -21,6 +22,7 @@
 
         body{
             background-image: url("../Imatges/portada-slider-B-op2.png");
+            background-size: cover;
 
         }
         .marges{
@@ -51,22 +53,13 @@
         margin-right: auto;
         }
 
-        h4,h3{
+        h1{
         margin-right: 15px;
         text-align: center;
         font-family: "Latin Modern Roman 10";
         font-style: oblique;
-        margin-bottom: 40px;
-        margin-top: 30px;
-        }
-
-        h2{
-        margin-right: 15px;
-        text-align: center;
-        font-family: "Latin Modern Roman 10";
-        font-style: oblique;
-        margin-bottom: 15px;
-        margin-top: 15px;
+        padding-bottom: 35px;
+        padding-top: 35px;
         }
 
         .divCentral{
@@ -74,23 +67,61 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 3%;
-        margin-bottom: 7%;
+        margin-bottom: 3%;
         border-radius: 20px;
         }
         .dropdown-item:hover{
         background: rgba(220, 0, 19, 0.5);
         color:white;
        }
-
-       p{
-       text-align:justify;
-       font-family: sans-serif;
-       margin-left: auto;
-       margin-right: auto;
-       width: 80%;
-
+       label{
+       margin-left: 3px;
        }
 
+       .labTitol{
+       margin-bottom: 10px;
+       }
+       input[type="checkbox"], input[type="text"], input[type="email"], input[type="radio"]{
+       border: 1px black solid;
+       }
+       #validationDefault04, #floatingTextarea {
+       border: 1px black solid;
+       }
+
+       .enviar{
+       margin-bottom: 20px;
+       }
+       .labText{
+       padding-top: 15px;
+       }
+       .adjuntar{
+       float: right;
+
+       }
+       .range-wrap{
+        margin-top: 30px;
+       }
+      .range {
+        width: 100%;
+      }
+      .bubble {
+        background: CornflowerBlue;
+        color: white;
+        padding: 4px 10px;
+        position: relative;
+        border-radius: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .bubble::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background: CornflowerBlue;
+        top: -1px;
+        left: 50%;
+      }
 
     </style>
 </head>
@@ -131,54 +162,171 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-10 divCentral">
-      <h2>Recetas</h2>
-      <p>La cocina es un espacio o lugar especialmente equipado y preparado para la preparación de alimentos.
-        Una cocina moderna incluye como mínimo una cocina (con quemadores), un fregadero y el frigorífico
-        y los muebles para almacén, los tres vértices del triángulo de trabajo que se ha de respetar para poder
-        trabajar cómodamente en la cocina. La encimera es la superficie de trabajo en la cocina está hecha
-        normalmente de materiales noble como el mármol, la madera o la pizarra, en la actualidad están también
-        de moda materiales sintéticos de gran resistencia y que facilitan el mantenimiento y la limpieza en la cocina.
-        Además es frecuente que exista un refrigerador, un horno de microondas, una campana extractora y otros
-        aparatos electrodomésticos, como licuadora y batidora que facilitan el trabajo en la cocina. El tamaño
-        de las cocinas varia y depende del tamaño de la vivienda. En casas pequeñas se suele encontrar la
-        cocina-comedor para ahorrar espacio y en casas grandes se acostumbra a colocar dentro la lavadora.
-      </p>
+    <div class="col-sm-8 divCentral">
+      <form class="row g-3">
+        <h1>Formulari</h1>
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label labText">Nombre</label>
+          <input type="text" class="form-control" id="validationDefault01" value="" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label labText">Apellidos</label>
+          <input type="text" class="form-control" id="validationDefault02" value="" >
+        </div>
+        <div class="col-md-4">
+          <label for="validationemailAddress" class="form-label labText">Correo</label><br>
+          <input  class="form-control" id="validationemailAddress" type="email" size="64" maxLength="64" required pattern=".+@.+.com">
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label labText">Ciudad</label>
+          <input type="text" class="form-control" id="validationDefault03" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label labText">Pais</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled>España</option>
+            <option>Francia</option>
+            <option>Italia</option>
+            <option>Argentina</option>
+            <option>Alemania</option>
+            <option>Inglaterra</option>
+            <option>Chile</option>
+            <option>Colombia</option>
+            <option>Brasil</option>
+            <option>Cuba</option>
+            <option>Equador</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault05" class="form-label labText">Codigo Postal</label>
+          <input type="text" class="form-control" id="validationDefault05" required>
+        </div>
+        <div class="col-md-6">
+          <label class="from-label labTitol labText">Que tipo de comida le gustan más:</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" >
+            <label class="form-check-label " for="inlineCheckbox1">Japonesa</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2">
+            <label class="form-check-label" for="inlineCheckbox2">Mejicana</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3">
+            <label class="form-check-label" for="inlineCheckbox3">Española</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox4">
+            <label class="form-check-label" for="inlineCheckbox4">India</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox5">
+            <label class="form-check-label" for="inlineCheckbox5">Italiana</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox6">
+            <label class="form-check-label" for="inlineCheckbox6">Alemana</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox7">
+            <label class="form-check-label" for="inlineCheckbox7">China</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox8">
+            <label class="form-check-label" for="inlineCheckbox8">Marroqui</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label class="from-label labTitol labText">Que tipos de alimento sules comer más:</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox9" >
+            <label class="form-check-label " for="inlineCheckbox9">Carne blanca</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox10">
+            <label class="form-check-label" for="inlineCheckbox10">Carne Roja</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox11">
+            <label class="form-check-label" for="inlineCheckbox11">Pescado Blanco</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox12">
+            <label class="form-check-label" for="inlineCheckbox12">Pescado Azul</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox13">
+            <label class="form-check-label" for="inlineCheckbox13">Marisco</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox14">
+            <label class="form-check-label" for="inlineCheckbox14">Hortalizas</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox15">
+            <label class="form-check-label" for="inlineCheckbox15">Fruta</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox16">
+            <label class="form-check-label" for="inlineCheckbox16">Lacteos</label>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <label  class="form-label labTitol labText" for="floatingTextarea">Escribe un comentario de lo que encuentras de la página web: </label>
+          <div class="form-floating">
+            <textarea class="form-control" id="floatingTextarea" style="height: 100px"></textarea>
+          </div>
+        </div>
+        <div class="col-md-4 adjuntar">
+          <label  class="form-label labTitol labText" for="floatingTextarea">Adjunta alguna receta, y la publicaremos en nuestra web.</label>
+          <input type="file" class="form-control" id="inputGroupFile02">
+        </div>
+        <div class="col-md-12 range-wrap">
+          <label class="form-label">Con que frecuencia va a comer fuera al mes:</label>
+          <input type="range" class="range" min="0" max="10" >
+          <output class="bubble"></output>
+        </div>
+        <div class="col-md-12">
+          <button class="btn btn-primary enviar" type="submit">Enviar</button>
+        </div>
+      </form>
+
     </div>
   </div>
   <div class="row">
     <div class="col-sm-12 marges">
-      <footer class="text-center text-white fixed-bottom">
+      <footer class="bg-black text-center text-white">
         <!-- Section: Social media -->
         <section class="mb-4">
           <!-- Facebook -->
           <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-            <i class="fab fa-facebook-square"></i></a>
+            <i class="fab fa-facebook-square"></i>
+          </a>
 
           <!-- Twitter -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-twitter"></i
-          ></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i class="fab fa-twitter"></i>
+          </a>
 
           <!-- Google -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-google"></i
-          ></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i class="fab fa-google"></i>
+          </a>
 
           <!-- Instagram -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-instagram"></i
-          ></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i class="fab fa-instagram"></i>
+          </a>
 
           <!-- Linkedin -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-linkedin-in"></i
-          ></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
 
           <!-- Github -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-github"></i
-          ></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i class="fab fa-github"></i>
+          </a>
         </section>
 
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
@@ -189,6 +337,26 @@
   </div>
 </div>
 <script>
+  const allRanges = document.querySelectorAll(".range-wrap");
+  allRanges.forEach(wrap => {
+  const range = wrap.querySelector(".range");
+  const bubble = wrap.querySelector(".bubble");
+
+  range.addEventListener("input", () => {
+    setBubble(range, bubble);
+  });
+  setBubble(range, bubble);
+  });
+
+function setBubble(range, bubble) {
+  const val = range.value;
+  const min = range.min ? range.min : 0;
+  const max = range.max ? range.max : 10;
+  const newVal = Number(((val - min) * 100) / (max - min));
+  bubble.innerHTML = val;
+
+  bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+  }
 
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
