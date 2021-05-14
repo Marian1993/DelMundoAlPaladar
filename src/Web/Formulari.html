@@ -24,19 +24,11 @@
             background-image: url("../Imatges/portada-slider-B-op2.png");
 
         }
-        .marges{
-        margin-left:-24px;
-        margin-right: -24px;
-
-        }
-        .margeEsquerra{
-
-        }
        footer{
         background: rgba(0, 0, 0, 0.8);
-        margin-left: -15px;
-        margin-right: -24px;
         }
+
+
         li{
         margin-left: 15px;
         padding-bottom: 5px;
@@ -50,15 +42,6 @@
         .divCapcalera{
         margin-left: auto;
         margin-right: auto;
-        }
-
-        h1{
-        margin-right: 15px;
-        text-align: center;
-        font-family: "Latin Modern Roman 10";
-        font-style: oblique;
-        padding-bottom: 35px;
-        padding-top: 35px;
         }
 
         .divCentral{
@@ -125,43 +108,41 @@
     </style>
 </head>
 <body>
-<div class="container-fluid">
-  <div class="row marges">
-    <div class="col-sm-12">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse row" id="navbarSupportedContent">
-          <div class="col-sm-10 divCapcalera">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="Principal.html">Inicio</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Comida Internacional
-                </a>
-                <ul class="dropdown-menu OpFons" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item text-white " href="Japonesa.html">Japonesa</a></li>
-                  <li><a class="dropdown-item text-white" href="India.html">India</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-light" href="Recetas.html">Recetas</a>
-              </li>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+        <div class="col-sm-10 divCapcalera">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="Principal.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active text-light" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Comida Internacional
+              </a>
+              <ul class="dropdown-menu OpFons" aria-labelledby="navbarDropdown">
+                <li class="liEleccio"><a class="dropdown-item text-white " href="Japonesa.html">Japonesa</a></li>
+                <li class="liEleccio"><a class="dropdown-item text-white" href="India.html">India</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="Recetas.html">Recetas</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link active text-light" href="Formulari" tabindex="-1" aria-disabled="true">Gustos de los usuarios</a>
-              </li>
-            </ul>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="Formulari.html" tabindex="-1" aria-disabled="true">Gustos de los usuarios</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-8 divCentral">
+  </nav>
+</header>
+  <div class="container fluid divCentral">
       <form class="row g-3">
         <h1>Formulari</h1>
         <div class="col-md-4">
@@ -289,52 +270,47 @@
           <button class="btn btn-primary enviar" type="submit">Enviar</button>
         </div>
       </form>
-
-    </div>
   </div>
-  <div class="row">
-    <div class="col-sm-12 marges">
-      <footer class="bg-black text-center text-white">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-            <i class="fab fa-facebook-square"></i>
-          </a>
+  <footer class="bg-black text-center text-white">
+    <div class="container-fluid">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <i class="fab fa-facebook-square"></i>
+        </a>
 
-          <!-- Twitter -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-            <i class="fab fa-twitter"></i>
-          </a>
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <i class="fab fa-twitter"></i>
+        </a>
 
-          <!-- Google -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-            <i class="fab fa-google"></i>
-          </a>
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <i class="fab fa-google"></i>
+        </a>
 
-          <!-- Instagram -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-            <i class="fab fa-instagram"></i>
-          </a>
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <i class="fab fa-instagram"></i>
+        </a>
 
-          <!-- Linkedin -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
 
-          <!-- Github -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-            <i class="fab fa-github"></i>
-          </a>
-        </section>
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <i class="fab fa-github"></i>
+        </a>
+      </section>
 
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          Maria Antonia Martorell March
-        </div>
-      </footer>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        Maria Antonia Martorell March
+      </div>
     </div>
-  </div>
-</div>
+  </footer>
 <script>
   const allRanges = document.querySelectorAll(".range-wrap");
   allRanges.forEach(wrap => {

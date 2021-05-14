@@ -23,4 +23,13 @@ color: white;
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+h1{
+        margin-right: 15px;
+        text-align: center;
+        font-family: "Latin Modern Roman 10";
+        font-style: oblique;
+        padding-bottom: 35px;
+        padding-top: 25px;
+        }
+
 
